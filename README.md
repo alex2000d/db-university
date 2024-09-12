@@ -12,3 +12,9 @@ Modellizzare la struttura di un database per memorizzare tutti i dati riguardant
 Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi di stabilirne le relazioni. Infine, andiamo a definire le colonne e i tipi di dato di ogni tabella.
 Utilizzare https://www.drawio.com/ per la creazione dello schema.
 Esportare quindi il diagramma in jpg e caricarlo nella repo.
+
+1- Seleziona tutti gli studenti nati nel 1990
+soluzione
+SELECT * 
+FROM `students` 
+WHERE year (`date_of_birth`) = 1990;
