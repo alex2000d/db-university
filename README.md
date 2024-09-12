@@ -52,3 +52,9 @@ soluzione
 SELECT * 
 FROM `degrees`
 WHERE`level` = 'magistrale';
+
+7- Da quanti dipartimenti è composta l'università?
+soluzione
+SELECT * 
+FROM `departments`
+WHERE`id`;
