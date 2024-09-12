@@ -30,3 +30,11 @@ soluzione
 SELECT * 
 FROM `students` 
 WHERE year (`date_of_birth`) > 30;
+
+4- Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di
+laurea
+soluzione
+SELECT * 
+FROM `courses`
+WHERE year = 1
+AND `period` = 'I semestre';
