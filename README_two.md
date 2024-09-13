@@ -17,3 +17,12 @@ soluzione
 SELECT `exam_id`, AVG(vote) AS media_voti
 FROM `exam_student`
 GROUP BY `exam_id`;
+
+ESERCIZI CON JOIN
+<!----------------------------------------------------->
+1- Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia
+SOLUZIONE
+SELECT `students`.id, `students`.name, `degrees`.id, `degrees`.name
+FROM `students`
+JOIN `degrees` ON `students`.degree_id = `degrees`.id
+WHERE `degrees`.name = 'Corso di Laurea in Economia';
