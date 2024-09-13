@@ -35,3 +35,11 @@ JOIN `departments` ON `degrees`.department_id = `departments`.id
 WHERE `departments`.name = 'Neuroscienze' 
 AND `degrees`.name = 'Magistrale';
 (insieme vuoto non funziona da correggere)
+
+3- Selezionare tutti i corsi in cui insegna Fulvio Amato
+soluzione
+SELECT `courses`.id, `courses`.`name`, `teachers`.name, `teachers`.`surname`
+FROM `courses`
+JOIN `course_teacher` ON `courses`.id = `course_teacher`.course_id
+JOIN `teachers` ON `course_teacher`.teacher_id = `teachers`.id
+ WHERE `teachers`.`name` LIKE '%Fulvio%';
